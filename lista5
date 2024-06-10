@@ -1,4 +1,5 @@
-def romanos2(x):
+#questão 2
+def romanos(x):
   conversor={1000: 'M', 900: 'CM', 500: 'D', 400: 'CD', 100: 'C', 90: 'XC', 50: 'L', 40: 'XL', 10: 'X', 9: 'IX', 5: 'V', 4: 'IV', 1: 'I'}
   numero=''
   for valor, romano in conversor.items():
@@ -6,4 +7,24 @@ def romanos2(x):
       numero = numero + romano
       x = x - valor
   return numero   
-romanos2(int(input()))   
+romanos()   
+
+#questão 3 item a)
+
+def potencia(x:float, n:int):
+  resultado=1
+  for i in range(n):
+    resultado=resultado*x
+  return resultado
+potencia(2.0, 4)
+
+#questão 3 item b)
+
+def potencialogn(x:float, n:int):
+  resultado=1
+  while resultado < x**(n):
+    resultado=resultado*x
+  return resultado
+potencialogn(2.0, 4)
+
+
