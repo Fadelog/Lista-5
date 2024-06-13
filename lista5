@@ -1,4 +1,4 @@
-#questão 2
+#Questão 2
 def romanos(x):
   conversor={1000: 'M', 900: 'CM', 500: 'D', 400: 'CD', 100: 'C', 90: 'XC', 50: 'L', 40: 'XL', 10: 'X', 9: 'IX', 5: 'V', 4: 'IV', 1: 'I'}
   numero=''
@@ -9,7 +9,7 @@ def romanos(x):
   return numero   
 romanos()   
 
-#questão 3 item a)
+#Questão 3 item a)
 
 def potencia(x:float, n:int):
   resultado=1
@@ -18,7 +18,7 @@ def potencia(x:float, n:int):
   return resultado
 potencia(2.0, 4)
 
-#questão 3 item b)
+#Questão 3 item b)
 
 def potencialogn(x:float, n:int):
   resultado=1
