@@ -37,6 +37,6 @@ def odd_one_out(lista):
     for numero, frequencia in contagem.items():
         if frequencia==1: #se valor = 1, então o elemento só aparece uma vez na lista
             return numero
-print(odd_one_out([1, 1, 2, 3, 4, 5, 3, 4, 2]))
+odd_one_out([1, 1, 2, 3, 4, 5, 3, 4, 2])
 
 
