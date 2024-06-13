@@ -39,4 +39,19 @@ def odd_one_out(lista):
             return numero
 odd_one_out([1, 1, 2, 3, 4, 5, 3, 4, 2])
 
+#Questão 5
+def longest_common_prefix(lista):
+    for r in range(1, len(lista)):
+        prefixo=''
+        for j in range(len(lista[0])):
+            if lista[0][j]==lista[r][j]:
+                prefixo= prefixo+lista[0][j]
+            else:
+                break
+    return prefixo
+            
+longest_common_prefix(['flower', 'floow', 'fla', 'aaaaa'])
+
+#a complexidade desse código é O(n^2) (com n sendo o tamanho da lista ou da maior palavra), pois ele percorre cada letra para cada palavra
+
 
