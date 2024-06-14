@@ -13,8 +13,12 @@ romanos()
 
 def potencia(x:float, n:int):
   resultado=1
-  for i in range(n):
-    resultado=resultado*x
+  if n>=0:
+    for _ in range(n):
+      resultado=resultado*x
+  else:
+    for _ in range(-n):
+      resultado = resultado*(1/x)
   return resultado
 potencia(2.0, 4)
 
