@@ -52,6 +52,6 @@ def longest_common_prefix(lista):
             
 longest_common_prefix(['flower', 'floow', 'fla', 'aaaaa'])
 
-#a complexidade desse código é O(n^2) (com n sendo o tamanho da lista ou da maior palavra), pois ele percorre cada letra para cada palavra
+#a complexidade desse código é O(n*m)
 
 
