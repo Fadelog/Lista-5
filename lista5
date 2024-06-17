@@ -1,3 +1,37 @@
+#Questão 1
+
+#a complexidade desse código é O(n)
+
+class Node:
+  def __init__(self, data):
+    self.data=data
+    self.next=None
+class Lista_encadeada:
+  def __init__(self, lista):
+    self.head=Node(lista[0])
+    no_atual=self.head
+    for numero in lista[1:]:
+      novo_no=Node(numero)
+      no_atual.next=novo_no
+      no_atual=novo_no
+  def vamos_printar(self):
+    no_atual=self.head
+    while no_atual is not None:
+      print(no_atual.data, end=" ")
+      no_atual=no_atual.next
+  def inverte_ordem(self):
+    no_atual=self.head
+    lista_inversa=[]
+    while no_atual is not None:
+      lista_inversa.insert(0, no_atual.data)
+      no_atual=no_atual.next
+    return Lista_encadeada(lista_inversa)
+
+lista_encadeada=Lista_encadeada([1, 2, 3])
+invertido=lista_encadeada.inverte_ordem()
+invertido.vamos_printar()
+
+
 #Questão 2
 def romanos(x):
   conversor={1000: 'M', 900: 'CM', 500: 'D', 400: 'CD', 100: 'C', 90: 'XC', 50: 'L', 40: 'XL', 10: 'X', 9: 'IX', 5: 'V', 4: 'IV', 1: 'I'}
