@@ -49,17 +49,14 @@ def potencia(x:float, n:int):
   resultado=1
   for i in range(n):
     resultado=resultado*x
+  if n>=0:
+    for _ in range(n):
+      resultado=resultado*x
+  else:
+    for _ in range(-n):
+      resultado = resultado*(1/x)
   return resultado
 potencia(2.0, 4)
-
-#Questão 3 item b)
-
-def potencialogn(x:float, n:int):
-  resultado=1
-  while resultado < x**(n):
-    resultado=resultado*x
-  return resultado
-potencialogn(2.0, 4)
 
 
 #Questão 4
